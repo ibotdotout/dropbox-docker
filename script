@@ -1,0 +1,3 @@
+#!./bin/bash
+
+timeout 10s ./.dropbox-dist/dropboxd | grep --line-buffered http | cut -d ' ' -f3 | uniq
